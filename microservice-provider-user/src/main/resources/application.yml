@@ -1,17 +1,8 @@
 server:
-  port: 7900
+  port: 7901
 spring:
-  jpa:
-    generate-ddl: false
-    show-sql: true
-    hibernate:
-      ddl-auto: none
-  datasource:
-    platform: h2
-    schema: classpath:schema.sql
-    data: classpath:data.sql
   application:
-    name: microservice-provider-user
+      name: microservice-provider-user
 logging:
   level:
     root: INFO

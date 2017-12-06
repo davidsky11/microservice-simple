@@ -27,7 +27,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Camden.SR6</version>
+                <version>Camden.SR7</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -40,6 +40,14 @@
         <module>microservice-eureka-server</module>
         <module>microservice-eureka-client</module>
         <module>microservice-discovery-eureka</module>
+        <module>microservice-ribbon</module>
+        <module>microservice-feign</module>
+        <module>microservice-consumer-movie-ribbon</module>
+        <module>microservice-provider-user</module>
+        <module>microservice-consumer-movie-ribbon-property-customizing</module>
+        <module>microservice-consumer-movie-ribbon-without-eureka</module>
+        <module>microservice-consumer-movie-feign</module>
+        <module>microservice-consumer-movie-feign-configuration</module>
     </modules>
 
     <repositories>
