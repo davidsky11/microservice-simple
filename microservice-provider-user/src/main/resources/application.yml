@@ -12,7 +12,18 @@ logging:
     com.kvlt: DEBUG
 eureka:
   client:
+    healthcheck:
+      enabled: true
     service-url:
       defaultZone: http://user:password123@localhost:8761/eureka/
+      #defaultZone: http://peer1:8761/eureka,http://peer2:8762/eureka
   instance:
     prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.applicatoin.instance_id:${server.port}}
+    metadata-map:
+      zone: SKY   # eureka可以理解的元数据
+      davidsky: DAVID  # 不会影响客户端行为
+    appname: USER-SERVICE-HH
+  dashboard:
+    enabled: true
+    path: /x
