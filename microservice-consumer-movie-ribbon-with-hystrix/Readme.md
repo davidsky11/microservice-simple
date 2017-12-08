@@ -1,6 +1,5 @@
-主应用：  @EnableCircuitBreaker
+Hystrix Dashboard
 
-@HystrixCommand(fallbackMethod = "findByIdFallback")
-实现 fallbackMethod 输入参数、输入参数要一致
+@EnableHystrixDashboard
 
-http://localhost:8010/hystrix.stream
+http://localhost:8021/hystrix

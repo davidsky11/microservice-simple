@@ -1,2 +1,5 @@
+spring:
+  application:
+    name: microservice-ribbon
 user:
   url: http://localhost:7777/api/user/{id}

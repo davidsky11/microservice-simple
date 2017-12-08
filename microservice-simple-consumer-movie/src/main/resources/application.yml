@@ -4,7 +4,7 @@ user:
   userServicePath: http://localhost:7900/simple/
 spring:
   application:
-      name: microservice-consumer-movie
+      name: microservice-simple-consumer-movie
 eureka:
   client:
     service-url:

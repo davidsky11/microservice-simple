@@ -7,7 +7,7 @@ info:
     spring-boot-version: "@project.parent.version@"
 spring:
   application:
-      name: microservice-consumer-movie
+      name: microservice-consumer-movie-ribbon-with-hystrix-propagation
 eureka:
   client:
     healthcheck:

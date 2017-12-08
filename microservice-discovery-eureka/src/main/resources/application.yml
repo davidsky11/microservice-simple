@@ -1,5 +1,8 @@
 server:
   port: 8761
+spring:
+  application:
+    name: microservice-discovery-eureka
 eureka:
   datacenter: cloud
   environment: product

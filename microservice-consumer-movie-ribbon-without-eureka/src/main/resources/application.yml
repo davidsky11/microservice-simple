@@ -2,7 +2,7 @@ server:
   port: 8012
 spring:
   application:
-      name: microservice-consumer-movie-ribbon
+      name: microservice-consumer-movie-ribbon-withour-eureka
 eureka:
   client:
     service-url:
