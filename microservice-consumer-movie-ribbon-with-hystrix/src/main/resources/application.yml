@@ -1,0 +1,12 @@
+server:
+  port: 8010
+spring:
+  application:
+      name: microservice-consumer-movie
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000  # 延长hystrix超时时间，默认1秒
