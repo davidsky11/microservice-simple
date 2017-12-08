@@ -1,6 +1,8 @@
 server:
   port: 8761
 eureka:
+  datacenter: cloud
+  environment: product
   client:
     register-with-eureka: false
     fetch-registry: false

@@ -21,6 +21,13 @@ public class User implements Serializable {
 
     private BigDecimal balance;
 
+    public User() {}
+
+    public User(Long id, String username) {
+        this.id = id;
+        this.username = username;
+    }
+
     public Long getId() {
         return id;
     }

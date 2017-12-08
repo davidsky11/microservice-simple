@@ -21,7 +21,7 @@ import org.springframework.web.client.RestTemplate;
 @RibbonClient(name = "microservice-provider-user", configuration = TestConfiguration2.class)  // 通过注解屏蔽扫描
 //@RibbonClient(name = "microservice-provider-user", configuration = TestConfiguration.class)  // 转移到其他目录，避免被扫描到
 @ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = ExcludeFromComponentScan.class)})  // 不扫描带这个注解的路径或文件
-public class MicroserviceConsumerMovieRibbonApplication {
+public class ConsumerMovieRibbonApplication {
 
     @Bean
     @LoadBalanced
@@ -30,6 +30,6 @@ public class MicroserviceConsumerMovieRibbonApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(MicroserviceConsumerMovieRibbonApplication.class, args);
+        SpringApplication.run(ConsumerMovieRibbonApplication.class, args);
     }
 }
