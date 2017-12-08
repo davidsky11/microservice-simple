@@ -1,0 +1,40 @@
+server:
+  port: 8018
+info:
+  app:
+    name: "@project.name@"
+    version: "@project.version@"
+    spring-boot-version: "@project.parent.version@"
+spring:
+  application:
+      name: microservice-consumer-movie
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000 # 延长hystrix超时时间，默认1秒
+
+# 健康检查
+#management:
+#  health:
+#    mail:
+#      enabled: false
+#  security:
+#    enabled: true
+#    roles: ADMIN
+#  context-path: /admin
+endpoints:
+  health:
+    enabled: true
+    sensitive: false
+#security:
+#  basic:
+#    enabled: true
+#    path: /admin
+#  user:
+#    name: admin
+#    password: admin
