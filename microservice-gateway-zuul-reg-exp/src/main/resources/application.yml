@@ -1,0 +1,13 @@
+server:
+  port: 8759
+spring:
+  application:
+    name: microservice-gateway-zuul-reg-exp
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  server:
+    enable-self-preservation: false # 禁用自我保护模式
+  instance:
+    prefer-ip-address: true

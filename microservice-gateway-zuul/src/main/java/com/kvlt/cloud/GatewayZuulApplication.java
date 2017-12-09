@@ -17,4 +17,5 @@ public class GatewayZuulApplication {
     public static void main(String[] args) {
         SpringApplication.run(GatewayZuulApplication.class, args);
     }
+
 }

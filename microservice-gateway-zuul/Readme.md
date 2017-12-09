@@ -28,4 +28,7 @@ zuul:
     path + serviceId  更细粒度控制，反向代理针对serviceId  
     
 ==> application.yml.bak2：
-    path + url  
+    path + url
+    
+==> application.yml.bak2：
+    path + serviceId  负载均衡
