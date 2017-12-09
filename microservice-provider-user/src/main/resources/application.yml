@@ -23,7 +23,7 @@ eureka:
     metadata-map:
       zone: SKY   # eureka可以理解的元数据
       davidsky: DAVID  # 不会影响客户端行为
-    appname: USER-SERVICE-HH
+#    appname: USER-SERVICE-HH
   dashboard:
     enabled: true
     path: /x
