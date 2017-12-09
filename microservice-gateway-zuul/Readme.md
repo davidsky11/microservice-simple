@@ -20,3 +20,9 @@ zuul:
 zuul:
     routes:
         microservice-provider-user: /user/**
+        
+==> application.yml.bak0：
+    添加反向代理，过滤部分代理
+    
+==> application.yml.bak1：
+    更细粒度控制，反向代理针对serviceId
