@@ -39,6 +39,17 @@ public class UserController {
         return user;
     }
 
+    @GetMapping("/movie/{id}")
+    public User findMovieById(@PathVariable Long id) {
+        System.out.println("id ------ " + id);
+        User user = new User();
+        user.setId(id);
+        user.setUsername("Movie_" + id);
+        user.setAge(Short.parseShort("2"));
+        user.setBalance(new BigDecimal(88));
+        return user;
+    }
+
     @GetMapping("/eureka-instane")
     public String serviceUrl() {
         InstanceInfo info = this.eurekaClient.getNextServerFromEureka("MICROSERVICE-PROVIDER-USER", false);

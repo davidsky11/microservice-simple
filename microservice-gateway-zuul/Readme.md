@@ -40,3 +40,8 @@ prefix: /api   # 加前缀 /api
 prefix: /simple
 strip-prefix: false 联合使用
     --> 访问路径：http://localhost:8760/simple/microservice-provider-user/1
+    
+==> application.yml.bak5：
+    细粒度控制
+    ignored-patterns: /**/movie/**
+    忽略  /xxx/movie/xxx 访问路径
