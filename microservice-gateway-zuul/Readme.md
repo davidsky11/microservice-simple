@@ -30,5 +30,13 @@ zuul:
 ==> application.yml.bak2：
     path + url
     
-==> application.yml.bak2：
+==> application.yml.bak3：
     path + serviceId  负载均衡
+    
+==> application.yml.bak4：
+prefix: /api   # 加前缀 /api
+    --> 访问路径：http://localhost:8760/api/microservice-provider-user/simple/1
+    
+prefix: /simple
+strip-prefix: false 联合使用
+    --> 访问路径：http://localhost:8760/simple/microservice-provider-user/1

@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Bean;
 @EnableZuulProxy  // 组合注解  包含 @EnableCircuitBreaker @EnableDiscoveryClient
 public class GatewayZuulRegExpApplication {
 
-    // 将 microservice-provider-user-v1 映射成 /v1/microservice-provider-user/
+    // 将 microservice-provider-user-v1 映射成 /v1/microservice-provider-user/**
     @Bean
     public PatternServiceRouteMapper serviceRouteMapper() {
         return new PatternServiceRouteMapper(
