@@ -17,5 +17,12 @@ zuul:
   routes:
     users:
       path: /user-url/**  # /user-path/* 只能匹配/user-path/simple，/user-path/**可以多层匹配
-      url: http://localhost:7901/
-    #microservice-consumer-movie-ribbon-with-hystrix: /movie/**
+      serviceId: microservice-provider-user
+
+ribbon:
+  eureka:
+    enabled: false
+
+microservice-provider-user:   # 这里是serviceId
+  ribbon:
+    listOfServers: http://localhost:7901/,http://localhost:7902/  # 负载均衡服务节点
