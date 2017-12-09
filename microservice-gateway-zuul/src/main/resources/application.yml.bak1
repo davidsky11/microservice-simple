@@ -16,6 +16,6 @@ zuul:
   ignoredServices: microservice-consumer-movie-ribbon-with-hystrix  # 不反向代理
   routes:
     users:
-      path: /user-url/**  # /user-path/* 只能匹配/user-path/simple，/user-path/**可以多层匹配
-      url: http://localhost:7901/
+      path: /user-path/**  # /user-path/* 只能匹配/user-path/simple，/user-path/**可以多层匹配
+      serviceId: microservice-provider-user
     #microservice-consumer-movie-ribbon-with-hystrix: /movie/**

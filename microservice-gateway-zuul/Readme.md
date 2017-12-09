@@ -25,4 +25,7 @@ zuul:
     添加反向代理，过滤部分代理
     
 ==> application.yml.bak1：
-    更细粒度控制，反向代理针对serviceId
+    path + serviceId  更细粒度控制，反向代理针对serviceId  
+    
+==> application.yml.bak2：
+    path + url  
