@@ -12,10 +12,11 @@ eureka:
   instance:
     prefer-ip-address: true
 
-zuul:
-  ignored-patterns: /**/movie/**  # 忽略
-  routes:
-    microservice-provider-user: /user/**
-logging:
-  level:
-    com.netflix: debug
+#zuul:
+#  sensitive-headers: "Cookie", "Set-Cookie", "Authorization"
+
+# 处理大文件上传超时
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000 # hystrix超时时间
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000

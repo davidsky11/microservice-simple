@@ -1,0 +1,15 @@
+server:
+  port: 8025
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: microservice-file-upload
+  http:
+    multipart:
+      max-file-size: 200Mb      # Max file size，默认1M
+      max-request-size: 280Mb   # Max request size，默认10M
