@@ -26,6 +26,7 @@ public class FileUploadController {
      */
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public @ResponseBody String handleFileUpload(@RequestParam(value = "file", required = true) MultipartFile file) throws IOException {
+        // 可能会有 堆内存溢出问题，需要设置JVM内存大小，  -Xms4000M -Xmx4000M
         byte[] bytes = file.getBytes();
         File fileToSave = new File(file.getOriginalFilename());
         FileCopyUtils.copy(bytes, fileToSave);
