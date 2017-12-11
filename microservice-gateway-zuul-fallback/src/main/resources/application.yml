@@ -1,0 +1,22 @@
+server:
+  port: 8755
+spring:
+  application:
+    name: microservice-gateway-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  server:
+    enable-self-preservation: false # 禁用自我保护模式
+  instance:
+    prefer-ip-address: true
+
+#zuul:
+#  sensitive-headers: "Cookie", "Set-Cookie", "Authorization"
+
+# 处理大文件上传超时
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000 # hystrix超时时间
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
