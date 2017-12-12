@@ -12,9 +12,6 @@ eureka:
   instance:
     prefer-ip-address: true
 
-#zuul:
-#  sensitive-headers: "Cookie", "Set-Cookie", "Authorization"
-
 # 处理大文件上传超时
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000 # hystrix超时时间
 ribbon:
