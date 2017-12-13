@@ -61,6 +61,8 @@
         <module>microservice-gateway-zuul-fallback</module>
         <module>microservice-sidecar</module>
         <module>microservice-gateway-zuul-filter</module>
+
+        <module>config-learning/microservice-config-server</module>
     </modules>
 
     <repositories>
