@@ -63,6 +63,7 @@
         <module>microservice-gateway-zuul-filter</module>
 
         <module>config-learning/microservice-config-server</module>
+        <module>config-learning/microservice-config-client</module>
     </modules>
 
     <repositories>

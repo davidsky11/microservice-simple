@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+profile: abc
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8080
+      profile: dev
+      label: master # 当configServer的后端存储是Git时，默认就是master
+  application:
+    foobar
+
