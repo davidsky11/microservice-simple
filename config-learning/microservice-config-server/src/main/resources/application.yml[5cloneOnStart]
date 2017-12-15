@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #clone-on-start: true  # 全局配置
+          uri: https://github.com/davidsky11/config-server-repo   # 公用
+
+          repos:
+            simple: https://github.com/davidsky11/repo-simple
+            special:
+              pattern: special*/dev*, special*/test*    # 如果没有，使用公用
+              uri: https://github.com/davidsky11/repo-special
+              cloneOnStart: true  # 默认false
+
+
+

@@ -6,8 +6,4 @@ spring:
       server:
         git:
           uri: https://github.com/davidsky11/config-server-repo
-          username:
-          password:
-
-
 

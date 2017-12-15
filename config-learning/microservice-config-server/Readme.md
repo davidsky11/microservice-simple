@@ -18,3 +18,15 @@ http://localhost:8080/master/foobar-dev.properties
 /{label}/{application}-{profile}.yml
 /{application}-{profile}.properties
 /{label}/{application}-{profile}.properties
+
+
+-------------------------------------------------------
+
+https://github.com/davidsky11/{application}
+
+http://localhost:8080/master/repo-simple-default.properties
+http://localhost:8080/master/repo-special-default.properties
+
+对应的Git仓库：
+https://github.com/davidsky11/repo-simple
+https://github.com/davidsky11/repo-special
