@@ -4,6 +4,8 @@ spring:
       discovery:
         enabled: true
         service-id: microservice-config-server-eureka
+      username: user
+      password: password123
   application:
     name: foobar
     
