@@ -70,6 +70,7 @@
         <module>config-learning/microservice-config-client-authc</module>
         <module>config-learning/microservice-config-server-eureka</module>
         <module>config-learning/microservice-config-client-eureka</module>
+        <module>config-learning/microservice-config-client-refresh</module>
     </modules>
 
     <repositories>
