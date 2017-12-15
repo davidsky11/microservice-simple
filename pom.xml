@@ -64,6 +64,7 @@
 
         <module>config-learning/microservice-config-server</module>
         <module>config-learning/microservice-config-client</module>
+        <module>config-learning/microservice-config-server-encrypt</module>
     </modules>
 
     <repositories>
