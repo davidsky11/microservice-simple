@@ -71,6 +71,7 @@
         <module>config-learning/microservice-config-server-eureka</module>
         <module>config-learning/microservice-config-client-eureka</module>
         <module>config-learning/microservice-config-client-refresh</module>
+        <module>config-learning/microservice-config-client-refresh-bus</module>
     </modules>
 
     <repositories>
