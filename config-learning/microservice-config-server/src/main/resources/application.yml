@@ -8,6 +8,11 @@ spring:
           uri: https://github.com/davidsky11/config-server-repo
           #username:    # 仓库用户
           #password:    # 密码
+  #rabbitmq:   # 自动刷新 依赖MQ
+  #    host: localhost
+  #    port: 32777
+  #    user: admin
+  #    password: 123456
 
 
 
